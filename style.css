@@ -1,0 +1,41 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+.heading{
+    margin-top: 20px;
+    font-family: 'Carter One', cursive;
+    background: linear-gradient(to left, #7F00FF, #E100FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control{
+    border-width: 2px;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #7F00FF, #E100FF);
+    
+}
+#search{
+    justify-content: center;
+}
+.row{
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+#box{
+    background: linear-gradient(to left, #7F00FF, #E100FF);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px #888888;
+}
+#itemName{
+    margin-top: 20px;
+    font-family: 'Carter One', cursive;
+    color: whitesmoke;
+}
+#itemPrice{
+    font-family: 'Carter One', cursive;
+    color: whitesmoke;
+}
