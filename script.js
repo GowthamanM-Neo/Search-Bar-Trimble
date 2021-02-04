@@ -98,7 +98,6 @@ function renderFunction(){
 function searchItem(){
     document.getElementById("row").innerHTML = "";
     var text = document.getElementById("searchName").value.toLowerCase();
-    console.log(text);
     const check = new RegExp(`^${text}[a-z]*`);
     for(var i=0;i<items.length;i++){
         if(check.test(items[i].name.toLowerCase())){
@@ -118,5 +117,12 @@ function searchItem(){
             node.appendChild(price);                    
             document.getElementById("row").appendChild(node);
         }
+    }
+    if(document.getElementById("row").innerHTML === ""){
+        var node = document.createElement("h4");
+        node.setAttribute("id","result");
+        var textnode = document.createTextNode("No Results Found!");
+        node.appendChild(textnode);
+        document.getElementById("row").appendChild(node);
     }
 }

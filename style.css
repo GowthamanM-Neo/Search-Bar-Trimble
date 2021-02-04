@@ -39,3 +39,9 @@ body::-webkit-scrollbar {
     font-family: 'Carter One', cursive;
     color: whitesmoke;
 }
+#result{
+    font-family: 'Carter One', cursive;
+    background: linear-gradient(to left, #7F00FF, #E100FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
